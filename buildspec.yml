@@ -6,7 +6,8 @@ phases:
       nodejs: 22.9.0
     commands:
       - echo Installing Node.js and dependencies...
-      - npm install # Install dependencies
+      - aws codeartifact login --tool npm --repository pipe-packages --domain pipe-domain --domain-owner 266735819128 --region eu-west-1
+      - npm install
 
   build:
     commands:
@@ -15,5 +16,6 @@ phases:
 
 artifacts:
   files:
+    - appspec.yml
     - build/** # Include all files in the build directory
   discard-paths: yes # This is typically set to yes to avoid directory structure
