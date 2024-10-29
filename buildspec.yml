@@ -6,6 +6,7 @@ phases:
       nodejs: 22.9.0
     commands:
       - echo Installing Node.js and dependencies...
+      - npm login
       - npm install # Install dependencies
 
   build:
