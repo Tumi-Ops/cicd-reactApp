@@ -7,7 +7,7 @@ phases:
     commands:
       - echo Installing Node.js and dependencies...
       - aws codeartifact login --tool npm --repository pipe-packages --domain pipe-domain --domain-owner 266735819128 --region eu-west-1
-      - npm install # Install dependencies
+      - npm install
 
   build:
     commands:
