@@ -16,5 +16,6 @@ phases:
 
 artifacts:
   files:
+    - appspec.yml
     - build/** # Include all files in the build directory
   discard-paths: yes # This is typically set to yes to avoid directory structure
